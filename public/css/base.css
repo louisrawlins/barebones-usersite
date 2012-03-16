@@ -18,6 +18,12 @@ body header nav {
   position: relative;
   padding: 1em;
   border: solid 1px black;
+  overflow: hidden;
+}
+
+body header nav #identity {
+  float: left;
+  margin-right: 10px;
 }
 
 body header nav ul {
@@ -42,6 +48,7 @@ section#flashes {
   width: 100%;
   font-size: 12px;
   text-align: center;
+  z-index: 998;
 }
 
 section#flashes .flash {
