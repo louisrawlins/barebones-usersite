@@ -2,23 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/css/application.css">
-  <link type="text/css" href="/css/ui-darkness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
-  
   <%= yield_content :css %>
-  
-  <script type="text/javascript" src="/js/jquery.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
-  <script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.cookie.js"></script>
-  <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.ui.timepicker.js"></script>
-  <script type="text/javascript" src="/js/jshashtable-2.1.js"></script>
-  <script type="text/javascript" src="/js/jquery.numberformatter-1.2.2.jsmin.js"></script>
-  <script type="text/javascript" src="/js/app_wide.js"></script>
-
   <%= yield_content :js %>
-
   <!--[if lte IE 9]>
     <script type="text/javascript" src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
