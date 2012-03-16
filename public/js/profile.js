@@ -5,7 +5,6 @@ $(document).ready(function () {
     rules: {
       'user[firstname]' : { required: true },
       'user[lastname]'  : { required: true },
-      'user[isin]'  : { required: true },
       'user[city]'  : { required: true },
       'user[state]' : { required: true }
     },

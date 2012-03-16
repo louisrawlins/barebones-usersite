@@ -1,3 +1,53 @@
+/* ## RESET ########################################################################### */
+/* Copyright (c) 2011, Yahoo! Inc. All rights reserved. Code licensed under the BSD License: http://developer.yahoo.com/yui/license.html version: 2.9.0 */
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+
+/* ### ADMIN.CSS ### */
+
+#create_user_form input {
+  width: 95%;
+}
+
+#create_user_form input[type=checkbox] {
+  width: 15px;
+}
+#create_user_form div.form_submit {
+  width: 150px;
+  font: "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+
+#create_user_form div.form_button {
+  width: 150px;
+  height: 23px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: buttonface;
+  text-align: center;
+}
+
+#create_user_form label.required_label {
+  font-weight: bold;
+}
+
+#create_user_form label.optional_label {
+  font-weight: normal;
+}
+
+#create_user_form label.error_label {
+  color: red;
+  font-size: 0.8em;
+}
+
+/* ### GLOBAL.CSS ### */
+
 .float_right{ float:right;}
 
 body {
@@ -1148,3 +1198,236 @@ table.styled tr td.actions {
   visibility: hidden;
 }
 
+/* ### PAGE_LAYOUT.CSS ### */
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+html, body {height: 100%;}
+/* REQUIRED BUTTON STYLES: */		
+button { 
+	position: relative;
+	border: 0; 
+	padding: 0;
+	cursor: pointer;
+	overflow: visible; /* removes extra side padding in IE */
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px;
+}
+
+button::-moz-focus-inner {
+	border: none;  /* overrides extra padding in Firefox */
+}
+
+button span { 
+	position: relative;
+	display: block; 
+	white-space: nowrap;	
+}
+textarea, input { 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px; 
+	border-radius: 3px; 
+	border: solid 1px #888; 
+	font-size:1em;
+	padding: 6px 10px;
+	margin: 0;
+	font-size: 14px;
+
+	outline: none;
+	-moz-outline: none;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	/* Safari and Google Chrome only - fix margins */
+	button span {
+		margin-top: -1px;
+	}
+}
+
+button.black { 
+	padding:.25em 3em;  
+	font-size:1em; 
+	text-align: center; 
+	background-color: black; 
+}
+	
+button.black span {
+	padding:.6em;  
+	color:#fff;
+}
+	
+button.black:hover, button.blackBtnHover { /* the redundant class is used to apply the hover state with a script */
+	background-position: right -210px; 
+}
+	
+button.black:hover span, button.blackBtnHover span {
+	background-position: 0 -70px;
+}
+
+#wrap {
+	min-height: 100%;
+	height: 100%;
+	position: relative;
+	min-width: 960px;
+}
+
+#wrap > header {
+	background-color: #262626;
+}
+
+#footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	border-top: 1px solid #111;
+} 
+
+
+#footer li {
+	padding: 0;
+	border-top: 1px solid #333;
+	border-bottom: 1px solid #111;
+} 
+
+
+#footer li a {
+	display: inline-block;
+	width: 100%;
+	height: 20px !important;
+	background: none !important;
+	color: #b2babc;
+	font-size: 11px;
+	text-decoration: none;
+	text-align: right;
+	padding-top: 10px !important;
+	border: none !important;
+}
+
+#footer a:hover {
+	color: #F1F3F4;
+}
+
+#profile_page{
+}
+
+#profile_page h1{
+	font-size: 1.2em;
+	font-weight: normal;
+	line-height: 1.6em;
+	color: black;
+	text-align:center;
+	width:90%;
+}
+#profile_page .profile{
+	width:100%;
+}
+#profile_page td{
+	font-size: .8em;
+	padding:.5em;
+}
+
+#profile_page .filler{
+	width:2em;
+}
+#profile_page .bottom_info{
+	width:90%;
+}
+#profile_page .marginLeft{
+	padding-left:6em;
+}
+
+#profile_submit {
+	margin: 20px 0 0 144px;
+}
+
+.text-align-center{	
+	text-align:center;
+}
+
+/* ### USERS.CSS ### */
+
+
+/* root element for tabs  */
+.tabs { 
+  list-style:none; 
+  margin:0 !important; 
+  padding:0;
+  height:30px;
+  border-bottom:1px solid #666; 
+}
+
+/* single tab */
+.tabs li { 
+  float:left;  
+  text-indent:0;
+  padding:0;
+  margin:0 !important;
+  list-style-image:none !important; 
+}
+
+/* link inside the tab. uses a background image */
+.tabs li { 
+  color: #666;
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: bold;
+  float: left;
+  padding: ;
+  width: 480px;
+  background: #eee;
+}
+
+.tabs .current { 
+  color: white;
+  cursor: auto;
+  background: #222;
+  overflow: hidden;
+}
+
+.wizard-nav {
+  clear: both;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+/* Different widths for tabs: use a class name: w1, w2, w3 or w2 */
+
+
+/* width 1 */
+.tabs .w1       { background-position: -519px 0; width:134px; }
+
+/* width 2 */
+.tabs .w2       { 
+  width: auto;
+  padding: 15px 10px 15px 40px;
+  display: block;
+  margin: 0;
+  background: #ddd;
+}
+.tabs .w2:hover   { background: #d0d0d0; text-decoration: none; }
+.tabs .w2.current { background: #222; }
+
+
+/* width 4 */
+.tabs .w4 { width:194px; }
+
+
+/* initially all panes are hidden */ 
+.panes {
+  border: 1px solid #DDD;
+  clear: left;
+  border-radius: 0 0 3px 3px;
+  padding: 40px 40px 20px 40px;
+  background: #f8f8f2;
+}
+
+.panes .pane {
+  display:none;   
+}
+
+#admin_user_form .field label {
+  width: 160px;
+}

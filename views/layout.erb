@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Basic User Site</title>
-  <link rel="stylesheet" href="/css/application.css">
-  <link type="text/css" href="/css/ui-darkness/jquery-ui-1.8.16.custom.css" rel="stylesheet" /> 
+  <link rel="stylesheet" href="/css/base.css">
   
   <%= yield_content :css %>
   
@@ -13,18 +12,8 @@
     <link type="text/css" rel="stylesheet" href="/css/iefix.css">
   <![endif]-->
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
-  <script type="text/javascript" src="/js/jquery.ui.touch-punch.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.cookie.js"></script>
-  <script type="text/javascript" src="/js/app_wide.js"></script>
-  <script type="text/javascript" src="/js/jquery.validate.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.ui.timepicker.js"></script>
-  <script type='text/javascript' src='/js/header.js'></script>
-  <script type='text/javascript' src='/js/jquery.blockUI.js'></script>
-  <script type='text/javascript' src='/js/isin.js'></script>
-  <script type="text/javascript" src="/js/jshashtable-2.1.js"></script>
-  <script type="text/javascript" src="/js/jquery.numberformatter-1.2.2.jsmin.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/local.js"></script>
 
   <%= yield_content :js %>
 
