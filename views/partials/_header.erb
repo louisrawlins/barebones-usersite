@@ -1,0 +1,25 @@
+<header>
+  <nav>
+    <div id="identity" >
+      <a href="<%= url(GlobalSettings.default_user_home) %>">Site</a>
+    </div>
+    <% if current_user %>
+      <div id="search">
+        <input type="text" id="search-input-field" name="search-input-field" placeholder="Search">
+      </div>
+      <div id="userInformation">
+        <ul>
+          <li><span>Hello, <span><a href="<%= url('/profile') %>"><%= current_user.username %></a></li>
+          <li><a href="<%= url('/logout') %>">Sign out</a></li>
+        </ul>
+      </div>
+    <% else %>
+      <div id="signInOptions">
+        <ul>
+          <li><a href="<%= url('/login') %>">Sign in</a></li>
+          <li><a href="<%= url('/signup') %>">Sign up</a></li>
+        </ul>
+      </div>
+    <% end %>
+  </nav>
+</header>
