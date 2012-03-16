@@ -1,7 +1,7 @@
 get '/home' do
   login_required
 
-  erb :home_user
+  erb :home
 end
 
 get '/profile' do

@@ -1,4 +1,5 @@
-<div class="login-wrapper">
+<fieldset>
+  <legend>Log In to Your Account</legend>
   <form id="login_form" action="<%= url('/login') %>" method="post">
     <div class="field">
       <label for="email">Email</label>
@@ -11,5 +12,7 @@
     <div class="submit field">
       <input type="submit" value="Login" />
     </div>
+    <span class="button"><a class="left help-link" href="<%= url('/forgot_pwd') %>">Forgot password?</a></span>
+    <span class="button"><a class="right help-link" href="<%= url('/signup') %>">Don't have account? SIGNUP</a></span>
   </form>
-</div>
+</fieldset>

@@ -7,7 +7,7 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; }
+body {margin: 0; font-size: 1em; line-height: 1.4; }
 
 
 body {
@@ -15,6 +15,63 @@ body {
 }
 
 body header nav {
+  position: relative;
   padding: 1em;
   border: solid 1px black;
+}
+
+body header nav ul {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+body header nav ul li {
+  margin-left: 10px;
+  float: left;
+}
+
+fieldset {
+  width: 320px;
+  padding: 1em;
+  border: solid 1px black;
+}
+
+section#flashes {
+  position: fixed;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+}
+
+section#flashes .flash {
+  width: 300px;
+  margin: 0 auto;
+  padding: 5px 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  border: solid 1px #eee;
+  border-top: none;
+  -moz-box-shadow:    0 1px 1px 0 #ccc;
+  -webkit-box-shadow: 0 1px 1px 0 #ccc;
+  box-shadow:         0 1px 1px 0 #ccc;
+}
+
+section#flashes .error {
+  background: salmon;
+}
+
+section#flashes .notice {
+  background: gold;
+}
+
+fieldset label {
+  width: 100px;
+  text-align: right;
+}
+
+fieldset input[type="field"] {
+  width: 100px;
+  text-align: right;
 }

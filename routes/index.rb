@@ -1,13 +1,13 @@
 get '/' do  
   redirect GlobalSettings.default_user_home, 303 if current_user
   current_user
-  erb :main
+  erb :index
 end
 
 
 get '/login' do
   current_user
-  erb :'auth/login_page'
+  erb :'auth/login'
 end
 
 post '/login' do
