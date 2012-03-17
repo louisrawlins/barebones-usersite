@@ -26,7 +26,7 @@
 ## Make all users admins:
 
 1. open console in dir with repo
-1.
+
     % sqlite3 basic-usersite.sqlite3<br>
     SQLite version 3.7.7 2011-06-23 19:49:22<br>
     Enter ".help" for instructions<br>
