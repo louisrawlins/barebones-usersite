@@ -1,7 +1,7 @@
 get '/admin/home' do
   admin_required
   
-  erb :'admin/home', :layout => :'admin/layout'
+  erb :'admin/home', :layout => :'layout'
 end
 
 get '/admin' do

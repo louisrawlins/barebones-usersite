@@ -4,13 +4,13 @@ require 'email'
 get '/admin/users' do
   admin_required
   
-  erb :'admin/users/index', :layout => :'admin/layout', :locals => { :users => User.all }
+  erb :'admin/users/index', :layout => :'layout', :locals => { :users => User.all }
 end
 
 get '/admin/users/new' do
   admin_required
   
-  erb :'admin/users/new', :layout => :'admin/layout', :locals => { :user => User.new }
+  erb :'admin/users/new', :layout => :'layout', :locals => { :user => User.new }
 end
 
 get '/admin/user/:user_id/edit' do |user_id|
@@ -18,7 +18,7 @@ get '/admin/user/:user_id/edit' do |user_id|
   
   user = User.get(user_id)
   if user
-    erb :'admin/users/edit', :layout => :'admin/layout', :locals => { :user => user }
+    erb :'admin/users/edit', :layout => :'layout', :locals => { :user => user }
   else
     flash[:error] = "User not found."
     redirect '/admin/users', 303
@@ -122,7 +122,7 @@ post '/admin/users/create' do
   else
     flash[:error] = "Could not create user."
     logger.error user.errors
-    erb :'admin/users/new', :layout => :'admin/layout', :locals => { :user => user }
+    erb :'admin/users/new', :layout => :'layout', :locals => { :user => user }
   end
 end
 
@@ -137,7 +137,7 @@ post '/admin/user/:user_id/update' do |user_id|
     else
       flash[:error] = "Could not update user."
       logger.error user.errors.inspect
-      erb :'admin/users/edit', :layout => :'admin/layout', :locals => { :user => user }
+      erb :'admin/users/edit', :layout => :'layout', :locals => { :user => user }
     end
   else
     flash[:error] = "Could not find user to update."
